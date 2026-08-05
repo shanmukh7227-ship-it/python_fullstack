@@ -1,61 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="{{url_for('static',filename='css/static/style.css')}}">
-    <title>Trainers page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static/css/style.css') }}">
+    <title>Trainers</title>
 </head>
-
 <body>
     <header>
-        Home <br>
         <h1>Trainers in NRIIT Learning Management</h1>
-        <p>Learn Practice Get Placed</p>
+        <p>Learn, practice, get placed.</p>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="courses.html">Courses</a>
-            <a href="trainers.html">Trainers</a>
-            <a href="register.html">Register</a>
-            <a href="login.html">Login</a>
-            <a href="contact.html">Contact</a>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/courses">Courses</a>
+            <a href="/trainers">Trainers</a>
+            <a href="/register">Register</a>
+            <a href="/login">Login</a>
+            <a href="/contact">Contact</a>
         </nav>
     </header>
     <main>
         <section>
             <h2>Meet Our Trainers</h2>
             <article>
-                <img src="images/trainer1.jpg" alt="Python Trainer" width="180" class="trainer-image">
-                <h3>Mr. Sriram</h3>
-                <p>Python Full Stack Trainer</p>
-                <p>Experience: 4+ years</p>
+                <img id="trainerImage" src="{{ url_for('static', filename='static/css/trainer.png') }}" alt="Python Trainer" width="180" class="trainer-image">
+                <h3 id="trainerName">Mr. Sriram</h3>
+                <p class="trainerRole">Python Full Stack Trainer</p>
+                <p class="trainerExp">Experience: 4+ years</p>
             </article>
         </section>
     </main>
     <footer>
-
         <hr>
-
         <p>&copy; 2026 NRIIT Learning Management System</p>
-
         <p>Email: info@nriit.edu</p>
-
         <p>Phone: +91 9876543210</p>
-
         <p>Follow Us:</p>
-
         <a href="#">Facebook</a> |
-
         <a href="#">Instagram</a> |
-
         <a href="#">LinkedIn</a>
-
     </footer>
-    <script>src="{{url for ('static,filename='js/script.js)}}"
-    </script>
-
+    <script src="{{ url_for('static', filename='static/static/js/script.js') }}"></script>
 </body>
-
 </html>
