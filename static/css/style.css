@@ -73,9 +73,9 @@ p {
 }
 
 .banner {
-    width: 80%;
-    height: 200px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 40px;
 }
 
 ul {
