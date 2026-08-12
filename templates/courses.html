@@ -13,14 +13,14 @@
     Home <br />
     <h1>Courses in NRIIT Learning Management</h1>
     <p>Learn Practice Get Placed</p>
-      <nav>
+     <nav>
       <a href="/">Home</a>
       <a href="/about">About</a>
       <a href="/courses">Courses</a>
       <a href="/trainers">Trainers</a>
       {% if session.get('user_email')%}
         <a href ="/logout">Logout</a>
-        {% endif %}
+        {% else %}
       <a href="/register">Register</a>
       <a href="/login">Login</a>
         {% endif %}
